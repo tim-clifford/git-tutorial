@@ -17,13 +17,22 @@ options are fine. For these instructions to apply, launch Git Bash.
 
 Ask @WeixuanZ or something lol. Can someone PR?
 
+## What to do if you get stuck
+As the old adage goes... RTFM. `man git` should be your best friend. Run it on
+any terminal where you use git. It's much better than any online tutorial you
+will ever find. there are also manpages for each of the git commands, try `man
+git-add`, `man git-commit`, and so on.
+
+The manpages should come first, but do ask someone knowledgeable if you still
+can't figure it out (or if they're nice and willing to help).
+
 ## How to exit vim!
 Occasionally git commands will open vim. My advice is to learn vim, you'll
 thank me later. If you really want to just exit, the following will work every
 time. (there are simpler ways when you know what you're doing).
 
-Type \<ESC\>:qa!\<Enter\>, where \<ESC\> and \<Enter\> are the escape and enter keys
-respectively.
+Type \<ESC\>:qa!\<Enter\>, where \<ESC\> and \<Enter\> are the escape and enter
+keys respectively.
 
 ## The very basics
 **To make a new repository**
