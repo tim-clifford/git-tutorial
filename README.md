@@ -10,12 +10,34 @@ your package manager...?
 
 **Windows**
 
-See [the official download page](https://git-scm.com/download). The default
-options are fine. For these instructions to apply, launch Git Bash.
+The simplest solution is to use Git Bash, which you can get from [the official
+download page](https://git-scm.com/download). The default options are fine.
 
+A more extendible solution is to install Windows Subsystem for Linux (WSL),
+which is a full Linux kernel in a virtual machine. (If you think this is too
+much, just use Git Bash) 
+
+You may also be interested in downloading the _Windows Terminal_ from the
+Microsoft Store.
 **MacOS**
 
-Ask @WeixuanZ or something lol. Can someone PR?
+The must-have package manager on MacOS is [Homebrew](https://brew.sh), which
+you can install by
+
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+``` 
+
+Then you can install packages through
+
+```sh
+brew install <package>  # suggestions: git (of course), python, wget...
+```
+
+> If you encounter a permission error, be cautious when you copy and paste
+> solutions from StackOverflow. Ask @WeixuanZ to make sure you don't mistakenly
+> give root privileges to all files in `/usr/local/`.
+
 
 ## What to do if you get stuck
 As the old adage goes... RTFM. `man git` should be your best friend. Run it on
@@ -124,9 +146,8 @@ rm -rf .git/modules/repo-name
 **BEWARE: files deleted on a terminal will not go to the recycle bin**
 
 N.B. Launching Git Bash from Windows puts you in "C:\\Users\\username" (written
-as `~`) when you start it. Launching a linux terminal usually puts you in
-"/home/username" (also written as `~`). Ask @WeixuanZ to explain MacOS or
-something lol.
+as `~`) when you start it. Launching a linux or MacOS terminal usually puts you
+in "/home/username" (also written as `~`).
 
 **To go to a directory**
 ```sh
