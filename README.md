@@ -13,12 +13,13 @@ your package manager...?
 The simplest solution is to use Git Bash, which you can get from [the official
 download page](https://git-scm.com/download). The default options are fine.
 
-A more extendible solution is to install Windows Subsystem for Linux (WSL),
-which is a full Linux kernel in a virtual machine. (If you think this is too
-much, just use Git Bash) 
+A more extensible solution is to install Windows Subsystem for Linux (WSL),
+which is a full Linux installation in a virtual machine. (If you think this is
+too much, just use Git Bash)
 
 You may also be interested in downloading the _Windows Terminal_ from the
 Microsoft Store.
+
 **MacOS**
 
 The must-have package manager on MacOS is [Homebrew](https://brew.sh), which
@@ -26,7 +27,7 @@ you can install by
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-``` 
+```
 
 Then you can install packages through
 
@@ -123,7 +124,7 @@ repository, open the branch you want to merge, and click the icon to open a
 pull request.
 
 ## Basic usage of submodules
-To fetch submodules (after cloning this repo)
+To fetch submodules (after cloning the repo)
 ```
 git submodule update --init
 ```
